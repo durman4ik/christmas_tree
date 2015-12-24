@@ -1,0 +1,126 @@
+* { 
+	margin: 0px; 
+	padding: 0px; 
+}
+
+html, body { 
+	width: 100%; 
+	height: 100%; 
+}
+
+canvas { 
+	display: block; 
+}
+
+#buttons {
+    width: 300px;
+    height: 40px;
+    top: 10px;
+    left: 10px;
+}
+
+#info {
+	width: 150px;
+    height: 90px;
+    top: 10px;
+    right: 10px;
+	z-index: 1;
+}
+
+#info #delete_zone {
+	display: block;
+    position: relative;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    padding: 10px;
+}
+
+#info #delete_zone #remove_image {
+    width: 100%;
+	height: 100%;
+    color: white;
+	text-align: center;
+    background: #E03939;
+    cursor: pointer;
+	
+	border: 35px solid rgba(0, 0, 0, 0.4);
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#info #delete_zone #remove_image:after {
+	content: 'Удалить';
+    top: 40%;
+    right: 31%;
+    color: white;
+    display: block;
+    position: absolute;
+}
+
+#info #delete_zone #remove_image:hover {
+	border: 0 solid rgba(0, 0, 0, 0.4);
+    
+}
+#info #delete_zone #remove_image:dragover {
+	border: 0 solid rgba(0, 0, 0, 0.4);
+    
+}
+
+#objects {
+    right: 10px;
+    top: 115px;
+    width: 150px;
+    height: 213px;	
+}
+
+#objects select {
+	width: 100%;
+	background: transparent;
+	border: 0;
+	border-bottom: 1px solid #B1B1B1;
+}
+
+#objects ul {
+	list-style: none;
+	height: 91%;
+	overflow-y: auto;
+}
+
+#objects li {
+	padding: 5px;
+    border-bottom: 1px solid #B1B1B1;
+}
+
+.info {
+	background: #CCCCCC;
+	position: absolute;
+	display: block;
+
+}
+
+.shadows {
+	-webkit-box-shadow: 3px 3px 3px #989898;
+	   -moz-box-shadow: 3px 3px 3px #989898;
+		 -o-box-shadow: 3px 3px 3px #989898;
+			box-shadow: 3px 3px 3px #989898;
+}
+
+.animate {
+	-webkit-transition: 0.4s ease;
+	   -moz-transition: 0.4s ease;
+		-ms-transition: 0.4s ease;
+		 -o-transition: 0.4s ease;
+			transition: 0.4s ease;
+}
+
+#buttons a {
+    width: 33%;
+    height: 100%;
+    display: block;
+    float: left;
+    color: black;
+    text-align: center;
+	text-decoration: none;
+}

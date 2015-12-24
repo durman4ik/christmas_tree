@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Canvas game</title>
+        <meta name="description" content="">
+        <link rel="stylesheet" href="main.css">
+        <script type="application/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="application/javascript" src="js/main.js"></script>
+        <script type="application/javascript" src="js/html_select.js"></script>
+    </head>
+    <body>
+        <canvas id='canvas'></canvas>
+        <div class='info shadows animate' id='buttons' style='display:none;'>
+			<a href='#' id='add' data-add='false'>Старт</a>
+			<a href='#' id='stop'>Stop</a>
+			<a href='#' id='clear'>Clear</a>
+		</div>
+		
+		<div class='info shadows animate' id='info' style='display:none;'>
+			<div id='delete_zone'>
+				<div id='remove_image' class='shadows animate'></div>
+			</div>
+		</div>
+		
+		<div class='info shadows animate' id='objects'>
+			<select id='select_toy'>
+				<option value='balls'>Шары</option>
+				<option value='presents'>Подарки</option>
+				<option value='stars'>Звезды</option>
+				<option value='special'>Специальные</option>
+			</select>
+			<ul id='balls' class='toys'>
+				<li draggable='true'>
+					<img class='image'  src='images/ball.gif' width='50px' height='50px'>
+					<p></p>
+				</li>
+				<li draggable='true'>
+					<img class='image' src='images/ball_blue.png' width='50px' height='50px'>
+					<p></p>
+				</li>
+				<li draggable='true'>
+					<img class='image' src='images/ball_pink.png' width='50px' height='50px'>
+					<p></p>
+				</li>
+				<li draggable='true'>
+					<img class='image' src='images/ball_red_gold.png' width='50px' height='50px'>
+					<p></p>
+				</li>				
+			</ul>
+			
+			<ul id='stars' class='toys' style='display:none;'>
+				<li draggable='true'>
+					<img class='image' src='images/star.png' width='50px' height='50px'>
+					<p></p>
+				</li>
+				<li draggable='true'>
+					<img class='image' src='images/stars.gif' width='50px' height='50px'>
+					<p></p>
+				</li>
+				<li draggable='true'>
+					<img class='image' src='images/head_star.png' width='50px' height='50px'>
+					<p></p>
+				</li>
+				
+			</ul>
+			
+			<ul id='presents' class='toys' style='display:none;'>
+				<li draggable='true'>
+					<img class='image'  src='images/present_blue.png' width='50px' height='50px'>
+					<p></p>
+				</li>
+				<li draggable='true'>
+					<img class='image'  src='images/present.png' width='50px' height='50px'>
+					<p></p>
+				</li>
+				<li draggable='true'>
+					<img class='image'  src='images/present_gold.png' width='50px' height='50px'>
+					<p></p>
+				</li>
+				<li draggable='true'>
+					<img class='image'  src='images/present_red.png' width='50px' height='50px'>
+					<p></p>
+				</li>
+				<li draggable='true'>
+					<img class='image'  src='images/present_white.png' width='50px' height='50px'>
+					<p></p>
+				</li>
+			</ul>
+			
+			<ul id='special' class='toys' style='display:none;'>
+				<li draggable='true'>
+					<img class='image'  src='images/grenade.png' width='50px' height='50px'>
+					<p></p>
+				</li>
+			</ul>
+		</div>
+
+    </body>
+</html>
